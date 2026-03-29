@@ -1,3 +1,7 @@
+import './assets/styles/base.css'
+import './assets/styles/typography.css'
+import './assets/styles/animations.css'
+
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
