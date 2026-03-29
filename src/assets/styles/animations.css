@@ -1,1 +1,55 @@
-/* Animation styles will go here */
+/* Animation Keyframes and Utility Classes */
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-shimmer {
+  background-image: linear-gradient(
+    90deg,
+    var(--color-surface-subtle) 25%,
+    var(--color-border) 50%,
+    var(--color-surface-subtle) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
+}
+
+/* Page Transitions (Vue <Transition> name="fade" / "slide") */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity var(--transition-normal);
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: opacity var(--transition-normal), transform var(--transition-normal);
+}
+.slide-enter-from {
+  opacity: 0;
+  transform: translateY(10px);
+}
+.slide-leave-to {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+/* Panel slide-in */
+.panel-enter-active,
+.panel-leave-active {
+  transition: transform var(--transition-normal), opacity var(--transition-normal);
+}
+.panel-enter-from,
+.panel-leave-to {
+  transform: translateX(100%);
+  opacity: 0;
+}
