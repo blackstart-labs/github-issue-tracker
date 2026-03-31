@@ -161,7 +161,7 @@ onMounted(loadIssue)
 
 <style scoped>
 .issue-detail-view {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: var(--space-32) var(--space-24);
   width: 100%;
@@ -304,7 +304,7 @@ onMounted(loadIssue)
 }
 
 .loading-state, .error-state {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: var(--space-48) var(--space-24);
   width: 100%;
