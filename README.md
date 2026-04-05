@@ -88,6 +88,17 @@ docker-compose up -d
 
 The application will be accessible at `http://localhost:8080`.
 
+## 🚀 Deployment
+
+### GitHub Pages (Default)
+The project is configured to deploy to GitHub Pages automatically on every push to the `main` branch. 
+See [.github/workflows/deploy.yml](.github/workflows/deploy.yml) for details.
+
+### Vercel
+To deploy to Vercel, connect your repository to Vercel and it will automatically detect the Vite environment. The provided [vercel.json](vercel.json) ensures correct SPA routing.
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fblackstart-labs%2Fgithub-issue-tracker)
+
 ## 🧪 Testing
 
 Run unit tests with Vitest:
